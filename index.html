@@ -5,18 +5,39 @@
   <title>SMS Consent – Verification Codes</title>
   <meta name="robots" content="noindex" />
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; margin: 40px; }
-    img { max-width: 100%; border: 1px solid #ddd; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 40px; max-width:800px; }
+    .step { margin:24px 0; padding:16px; border-radius:8px; background:#f7faf7; }
+    .step-title { font-weight:700; margin-bottom:8px; }
+    .images { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+    .images img { max-width:48%; border:1px solid #ddd; border-radius:6px; }
+    .note { color:#444; margin-top:8px; }
   </style>
 </head>
 <body>
-  <h1>SMS Consent Capture</h1>
-  <p>
-    Users explicitly opt in during signup before receiving any
-    one-time SMS verification codes. Messages are transactional
-    and used only for account security.
-  </p>
-  <img src="compliance/consent/sms-consent.png" alt="SMS consent at signup" />
+  <h1>SMS Consent</h1>
+
+  <div class="step" id="step-1">
+    <div class="step-title">Step 1</div>
+    <div>By default, the opt‑in checkbox is not selected and the "Send Code" button is disabled.</div>
+    <div class="images">
+      <!-- Replace filenames below with the two screenshots you provided -->
+      <figure>
+        <img src="compliance/consent/sms-consent-1.png" alt="Signup screen with checkbox unchecked and Send Code disabled" />
+        <figcaption>Screenshot: checkbox unchecked / Send Code disabled</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="step" id="step-2">
+    <div class="step-title">Step 2</div>
+    <div>When the user explicitly opts in during signup (before receiving any one‑time SMS verification codes), the "Send Code" button becomes enabled. Messages are transactional and used only for account security.</div>
+    <div class="images">
+      <figure>
+        <img src="compliance/consent/sms-consent-2.png" alt="Signup screen with checkbox checked and Send Code enabled" />
+        <figcaption>Screenshot: checkbox checked / Send Code enabled</figcaption>
+      </figure>
+    </div>
+  </div>
 </body>
 </html>
 
