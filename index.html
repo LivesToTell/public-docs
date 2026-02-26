@@ -12,6 +12,10 @@
     .images img { max-width:48%; border:1px solid #ddd; border-radius:6px; }
     .note { color:#444; margin-top:8px; }
     .app-note { background:#fff9e6; border-left:4px solid #f5c000; padding:12px; border-radius:6px; margin-bottom:18px; color:#333; }
+    .workflow { margin:20px 0; padding:14px; border-radius:8px; background:#ffffff; border:1px solid #eee; }
+    .workflow ol { margin:0 0 0 20px; color:#222; }
+    .workflow li { margin:8px 0; }
+    .security-note { margin-top:12px; color:#444; font-weight:600; }
   </style>
 </head>
 <body>
@@ -42,6 +46,19 @@
       </figure>
     </div>
   </div>
+
+  <section class="workflow" aria-labelledby="workflow-title">
+    <div id="workflow-title" class="step-title">Opt‑In Workflow (Step‑by‑Step)</div>
+    <ol>
+      <li>User enters phone number.</li>
+      <li>User manually checks the opt‑in checkbox (not pre‑selected).</li>
+      <li>User taps "Send Code".</li>
+      <li>User receives one‑time verification SMS.</li>
+      <li>User enters verification code.</li>
+      <li>Account is created after the user selects the checkbox to agree to the Terms of Service and Privacy Policy.</li>
+    </ol>
+    <div class="security-note">No promotional messages are sent. Only transactional SMS (verification) are used for account security.</div>
+  </section>
 </body>
 </html>
 
