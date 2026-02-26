@@ -11,16 +11,20 @@
     .images { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
     .images img { max-width:48%; border:1px solid #ddd; border-radius:6px; }
     .note { color:#444; margin-top:8px; }
+    .app-note { background:#fff9e6; border-left:4px solid #f5c000; padding:12px; border-radius:6px; margin-bottom:18px; color:#333; }
   </style>
 </head>
 <body>
   <h1>SMS Consent</h1>
 
+  <div class="app-note" role="note">
+    <strong>Note:</strong> This page documents the SMS consent portion of the LivesToTell mobile app signup flow — screenshots are from the mobile app and not a webform.
+  </div>
+
   <div class="step" id="step-1">
     <div class="step-title">Step 1</div>
     <div>By default, the opt‑in checkbox is not selected and the "Send Code" button is disabled.</div>
     <div class="images">
-      <!-- Replace filenames below with the two screenshots you provided -->
       <figure>
         <img src="compliance/consent/sms-consent-1.png" alt="Signup screen with checkbox unchecked and Send Code disabled" />
         <figcaption>Screenshot: checkbox unchecked / Send Code disabled</figcaption>
